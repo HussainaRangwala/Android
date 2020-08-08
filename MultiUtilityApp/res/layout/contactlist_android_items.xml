@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Name"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:id="@+id/tv_android_contact_name"
+        android:layout_weight="0.13" />
+
+    <TextView
+        android:text="Number"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/tv_android_contact_phone"
+        android:layout_weight="0.10" />
+
+   <!-- <TextView
+        android:id="@+id/side_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:padding="3dp"
+        android:textSize="14sp" />-->
+
+</LinearLayout>

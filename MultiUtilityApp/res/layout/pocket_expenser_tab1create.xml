@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="collection.anew.multiutilapp.Pocket_Expenser_Tab1Create">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:id="@+id/progressBar2" />
+
+    <TextView
+        android:text="Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_inc"
+        android:layout_alignLeft="@+id/tv_inc"
+        android:layout_alignStart="@+id/tv_inc"
+        android:layout_marginTop="20dp"
+        android:textSize="34sp"
+        android:fontFamily="cursive"
+        android:id="@+id/tv_exp" />
+
+    <Button
+        android:text="+ Income"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:id="@+id/btn_inc"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp"
+
+        android:layout_alignBaseline="@+id/btn_exp"
+        android:layout_alignBottom="@+id/btn_exp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Total Balance"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hr"
+        android:layout_alignLeft="@+id/tv_exp"
+        android:layout_alignStart="@+id/tv_exp"
+        android:layout_marginTop="13dp"
+        android:textSize="32sp"
+        android:fontFamily="cursive"
+        android:id="@+id/tv_tot_bal" />
+
+    <TableRow
+        android:id="@+id/hr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444"
+        android:layout_below="@+id/tv_exp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"></TableRow>
+
+    <Button
+        android:text="&gt;"
+        android:background="@drawable/button_states"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_fwd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/btn_bwd" />
+
+    <TextView
+        android:text="TextView"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tv_month"
+        android:layout_alignBottom="@+id/btn_fwd"
+        android:layout_alignStart="@+id/tv_inc"
+        android:layout_alignBaseline="@+id/btn_fwd"
+        android:layout_toEndOf="@+id/tv_inc_total" />
+
+    <Button
+        android:text="&lt;"
+
+        android:background="@drawable/button_states"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_bwd"
+
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btn_fwd"
+        android:layout_marginEnd="7dp" />
+
+    <TextView
+        android:text="0"
+        android:textColor="#e53935"
+        android:textSize="27sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_exp_total"
+        android:layout_alignBaseline="@+id/tv_exp"
+        android:layout_alignBottom="@+id/tv_exp"
+        android:layout_alignStart="@+id/tv_inc_total" />
+
+    <TextView
+        android:text="Income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="21dp"
+        android:textSize="34sp"
+        android:fontFamily="cursive"
+        android:id="@+id/tv_inc"
+        android:layout_below="@+id/progressBar2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="0"
+        android:textSize="27sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_bal"
+        android:layout_alignBottom="@+id/tv_tot_bal"
+        android:layout_alignStart="@+id/tv_exp_total" />
+
+    <Button
+        android:text="+ Expense"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_exp"
+        android:textSize="17sp"
+        android:layout_marginBottom="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/tv_tot_bal"
+        android:layout_marginEnd="28dp" />
+
+    <TextView
+        android:text="0"
+
+        android:textColor="#00e676"
+        android:textSize="27sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_inc_total"
+        android:layout_above="@+id/tv_exp"
+        android:layout_alignStart="@+id/btn_bwd" />
+
+
+</RelativeLayout>

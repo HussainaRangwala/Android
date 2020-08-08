@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pocket_expenser_tab2edit"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/tv_disp_exp_name"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/tv_mon" />
+
+
+    <Button
+        android:text="&lt;"
+        android:layout_marginTop="21.5dp"
+        android:background="@drawable/button_states"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/tv_month"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/btn_bwd1"
+        android:layout_alignBottom="@+id/tv_mon" />
+
+    <ListView
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:layout_gravity="fill_vertical"
+        android:id="@+id/list_view_expense"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+    <Button
+        android:text="&gt;"
+
+        android:layout_marginTop="21.5dp"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+
+        android:background="@drawable/button_states"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="260dp"
+        android:id="@+id/btn_fwd1" />
+
+
+
+</RelativeLayout>

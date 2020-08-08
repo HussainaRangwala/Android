@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="collection.anew.multiutilapp.MainActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/pb"
+        android:id="@+id/img_pb"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/img_pe"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/about_us"
+        android:id="@+id/img_abt"
+        android:layout_alignTop="@+id/img_sch"
+        android:layout_alignLeft="@+id/img_pb"
+        android:layout_alignStart="@+id/img_pb" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/pe"
+        android:id="@+id/img_pe"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="77dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_above="@+id/img_sch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/sch2"
+        android:id="@+id/img_sch"
+        android:layout_marginBottom="142dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/img_pe"
+        android:layout_alignStart="@+id/img_pe" />
+
+    <TextView
+        android:text="Phone Book"
+
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_phonebook"
+        android:layout_alignBaseline="@+id/tv_pocket_expenser"
+        android:layout_alignBottom="@+id/tv_pocket_expenser"
+        android:layout_alignEnd="@+id/img_pb" />
+
+    <TextView
+        android:text="Scheduler"
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_scheduler"
+        android:layout_below="@+id/img_abt"
+        android:layout_alignStart="@+id/img_sch" />
+
+    <TextView
+        android:text="About Us"
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_about"
+
+        android:layout_alignBaseline="@+id/tv_scheduler"
+        android:layout_alignBottom="@+id/tv_scheduler"
+        android:layout_alignEnd="@+id/img_abt" />
+
+    <TextView
+        android:text="Pocket Expenser"
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tv_pocket_expenser"
+        android:layout_below="@+id/img_pb"
+        android:layout_toStartOf="@+id/img_pb"
+        android:layout_marginEnd="26dp" />
+
+</RelativeLayout>

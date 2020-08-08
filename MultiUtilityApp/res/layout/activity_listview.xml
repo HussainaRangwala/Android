@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+
+    <TextView
+        android:layout_height="39dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_disp_cat_name"
+        android:layout_alignParentLeft="true"
+        android:text="Select Category"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+</LinearLayout>
