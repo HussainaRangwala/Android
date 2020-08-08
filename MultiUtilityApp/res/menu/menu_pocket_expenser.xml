@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="collection.anew.multiutilapp.PocketExpenser">
+    <item
+        android:id="@+id/action_back_from_pocketexpenser_app"
+        android:title="Back"
+        android:icon="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:showAsAction="always"
+        />
+
+</menu>
